@@ -1,0 +1,26 @@
+footer{
+    background-color: black;
+    color: #8b8b8b;
+    ul{
+        padding-left: 0;
+    }
+    .col-heading{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        position: relative;
+        font-weight: 600;
+        color: white;
+        &::after{
+            content: '';
+            height: 2px;
+            width: 50px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            background-color: white;
+        }
+    }
+}

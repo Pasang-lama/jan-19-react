@@ -1,0 +1,19 @@
+header{
+    .top-header{
+        background-color: var(--primary-color);
+    }
+    .navigation-bar{
+        button{
+            background-color: transparent;
+            border: none;
+            font-style: italic;
+        }
+        nav{
+            ul{
+                li{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
