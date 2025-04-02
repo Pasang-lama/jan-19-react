@@ -9,6 +9,7 @@ function Contact() {
             <section className="container my-5">
                 <h1 className="text-center">Contact us page</h1>
             </section>
+            
             <Footer />
         </>
     )

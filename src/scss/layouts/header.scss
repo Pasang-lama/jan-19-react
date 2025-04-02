@@ -1,8 +1,42 @@
 header{
     .top-header{
         background-color: var(--primary-color);
+        .aside-link{
+            li{
+                border-right: 1px solid #c0c0c0;
+                padding-right: 20px;
+                a{
+                    position: relative;
+                    &::before{
+                        content: " ";
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: #ffffff;
+                        transition: width .2s;
+                    }
+                    &:hover{
+                        &::before{
+                          width: 100%;
+                          left: 0;
+                        }
+                      }
+                }
+             
+              
+                &:last-child{
+                    border-right: none;
+                    padding-right: 0px;
+                }
+            }
+        }
     }
     .navigation-bar{
+        img{
+            height: 40px;
+        }
         button{
             background-color: transparent;
             border: none;

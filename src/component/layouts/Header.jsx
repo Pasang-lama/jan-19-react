@@ -1,17 +1,18 @@
 import React from "react";
 import "../../scss/layouts/header.scss"
 import Logo from "../../assets/logo-basel.svg"
+import { Link } from "react-router";
 
 function Header() {
   return (
     <header>
       <div className="top-header text-light px-5 py-3 d-flex justify-content-between">
         <a href=""><i className="bi bi-phone-fill"></i> OUR PHONE NUMBER: +77 (756) 334 876</a>
-        <ul className="d-flex gap-3">
-          <li><a href="">My account </a></li>
-          <li><a href="">Cart</a></li>
-          <li><a href="">  Our location</a></li>
-          <li><a href="">Contact us</a></li>
+        <ul className="d-flex aside-link gap-3">
+          <li><Link to={"/account"}>My account </Link></li>
+          <li><Link to={"/cart"}>Cart</Link></li>
+          <li><Link to={"/location"} href="">  Our location</Link></li>
+          <li><Link to={"/contact"}>Contact us</Link></li>
         </ul>
       </div>
       <div className="navigation-bar d-flex justify-content-between align-items-center  px-5 py-3">
@@ -25,7 +26,7 @@ function Header() {
           </ul>
         </nav>
         
-        <a href=""> <img src={Logo} height={20} alt="" /></a>
+        <Link to={"/"}><img src={Logo} height={20} alt="" /></Link>
 
         <button>Login / Register</button>
 

@@ -1,0 +1,47 @@
+.banner-section {
+    .slide-items {
+        position: relative;
+
+        .banner-details {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translate(0, -50%);
+            color: white;
+
+            .heading {
+                font-size: 80px;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 100px;
+            }
+
+            .sub-heading {
+                font-size: 60px;
+                font-family: var(--ternary-font);
+                line-height: 80px;
+            }
+
+            .custom-btn {
+                padding: 10px 20px;
+                background-color: var(--primary-color);
+                color: white;
+                display: inline-block;
+                margin-top: 10px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .react-multi-carousel-track {
+        .react-multi-carousel-item {
+            &:nth-child(even) {
+                .banner-details {
+                    right: 5%;
+                    left: auto;
+                    text-align: end;
+                }
+            }
+        }
+    }
+}
