@@ -1,5 +1,6 @@
 import React from "react";
 import "../../scss/layouts/footer.scss"
+import { Link } from "react-router";
 
 function Footer() {
     return (
@@ -9,7 +10,7 @@ function Footer() {
                     <div className="col-lg-2">
                         <div className="col-heading">OUR STORES</div>
                         <ul>
-                            <li><a href="">Ha Noi</a></li>
+                            <li><Link to={"/todo"}>Todo List</Link></li>
                             <li><a href="">New York</a></li>
                             <li><a href="">London SF</a></li>
                             <li><a href="">Los Angeles</a></li>

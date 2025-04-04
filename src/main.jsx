@@ -11,10 +11,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router";
-
 import Contact from './pages/Contact'
 import Pagenotfound from './pages/Pagenotfound.jsx'
 import Location from './pages/Location.jsx'
+import Hook from './pages/Hook.jsx'
+import Todo from './pages/Todo.jsx'
+import Productdetails from './pages/Productdetails.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +29,18 @@ const router = createBrowserRouter([
   {
     path: "/location",
     element: <Location />,
+  },
+  {
+    path: "/hook",
+    element: <Hook />,
+  },
+  {
+    path: "/todo",
+    element: <Todo />,
+  },
+  {
+    path: "/products/:id",
+    element: <Productdetails />,
   },
   {
     path: "/*",

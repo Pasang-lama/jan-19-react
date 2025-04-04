@@ -13,6 +13,7 @@ function Header() {
           <li><Link to={"/cart"}>Cart</Link></li>
           <li><Link to={"/location"} href="">  Our location</Link></li>
           <li><Link to={"/contact"}>Contact us</Link></li>
+          <li><Link to={"/hook"}>Hook</Link></li>
         </ul>
       </div>
       <div className="navigation-bar d-flex justify-content-between align-items-center  px-5 py-3">
