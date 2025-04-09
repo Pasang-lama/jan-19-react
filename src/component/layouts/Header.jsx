@@ -9,7 +9,7 @@ function Header() {
       <div className="top-header text-light px-5 py-3 d-flex justify-content-between">
         <a href=""><i className="bi bi-phone-fill"></i> OUR PHONE NUMBER: +77 (756) 334 876</a>
         <ul className="d-flex aside-link gap-3">
-          <li><Link to={"/account"}>My account </Link></li>
+          <li><Link to={"/login"}>My account </Link></li>
           <li><Link to={"/cart"}>Cart</Link></li>
           <li><Link to={"/location"} href="">  Our location</Link></li>
           <li><Link to={"/contact"}>Contact us</Link></li>

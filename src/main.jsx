@@ -17,6 +17,8 @@ import Location from './pages/Location.jsx'
 import Hook from './pages/Hook.jsx'
 import Todo from './pages/Todo.jsx'
 import Productdetails from './pages/Productdetails.jsx'
+import Prodcut from './pages/Prodcut.jsx'
+import Login from './pages/Login.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,8 +45,16 @@ const router = createBrowserRouter([
     element: <Productdetails />,
   },
   {
+    path: "/product",
+    element: <Prodcut />,
+  },
+  {
     path: "/*",
     element: <Pagenotfound />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 
